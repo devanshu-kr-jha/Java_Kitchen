@@ -34,12 +34,12 @@ public class DLL {
         Node node = new Node(val);
         Node last = head;
 
-        node.next = null;
-        if (head == null){
-            node.prev = null;
-            head = node;
-            return;
-        }
+//        node.next = null;           //Not required, does the same thing as InsertFirst if head=null
+//        if (head == null){
+//            node.prev = null;
+//            head = node;
+//            return;
+//        }
         while(last.next != null){
             last = last.next;
         }
